@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(214, 218, 107);
+    background: linear-gradient(90deg, rgba(214, 218, 107, 0.9557072829131653) 0%, rgba(114, 250, 205, 1) 28%, rgba(110, 222, 231, 0.6139705882352942) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: #0f9c85;
+}
+
+a:visited {
+    color: #ff5100;
+}
+
+a:active {
+    color: #faab00;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0f9c85;
+}
+
+h2 {
+    font-size: 32px;
+    font-style: normal !important;
+    color: #0f9c85;
+}
+
+p {
+    line-height: 23px;
+}
+
+.navigation {
+    padding: 10px 20px 10px 10px;
+    background-color: #ffffff7c;
+    width: fit-content;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: #ffffff7c;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px 10px 5px 10px;
+    border: #0f9c8596 2px solid;
+    text-align: center;
+}
+
+th {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #0f9c85;
+    font-size: larger;
+}
+
+#products-table .medication-type {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+ul, ol, dl {
+    list-style-position: inside;
+}
+
+.about-us-contents li ul li {
+    list-style-type: circle;
+}
+
+.about-us-contents li {
+    list-style-type: upper-roman;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+dt::after{
+    content: ' —';
+}
