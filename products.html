@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Коломойченко Катерина">
+    <link rel="stylesheet" type="text/css" href="./style.css"/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Асортимент аптеки</title>
+</head>
+<body>
+    <h1>Асортимент аптеки</h1>
+    <h2>Навігація</h2>
+    <nav class="navigation">
+        <a href="./index.html">Головна</a>
+        <a href="./about-us.html">Про нас</a>
+        <a href="./contact-us.html">Контакти</a>
+    </nav>
+
+    <table id="products-table">
+        <colgroup>
+            <col span="1" style="background-color: #0f9c85; color: white;">
+            <col span="4" style="background-color: #ffffff7c;">
+        </colgroup>
+        <tr>
+            <th></th>
+            <th colspan="2">Рецептурні</th>
+            <th colspan="2">Безрецептурні</th>
+        </tr>
+        <tr>
+            <td rowspan="6" class="medication-type">Алергія</td>
+            <td>Краплі</td>
+            <td>Дексаметазон-Дарниця</td>
+            <td rowspan="6">Таблетки</td>
+            <td rowspan="2">Діазолін-Дарниця</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Розчин для ін'єкцій</td>
+            <td>Димедрол-Дарниця</td>  
+        </tr>
+        <tr>
+            <td>Кальцію глюконат-Дарниця (стабілізований)</td>
+            <td rowspan="2">Лоратадин-Дарниця</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Таблетки</td>
+            <td>Неофілін</td>           
+        </tr>
+        <tr>
+            <td>Ерідез</td>
+            <td rowspan="2">Ерідез-Дарниця</td>
+        </tr>
+        <tr>
+            <td>Преднізалон-Дарниця</td>
+        </tr>
+    </table>
+
+    <h3>В наявності:</h3>
+    <div class="products-available">
+        <div>
+            <img src="./images/meds/img-1.png" alt="Дексаметазон-Дарниця">
+            <span>Дексаметазон-Дарниця</span>
+            <span>45 грн</span>
+        </div>
+        <div>
+            <img src="./images/meds/img-2.png" alt="Неофілін">
+            <span>Неофілін</span>
+            <span>25 грн</span>
+        </div>
+        <div>
+            <img src="./images/meds/img-3.png" alt="Ерідез">
+            <span>Ерідез</span>
+            <span>60 грн</span>
+        </div>
+        <div>
+            <img src="./images/meds/img-4.png" alt="Діазолін-Дарниця">
+            <span>Діазолін-Дарниця</span>
+            <span>45 грн</span>
+        </div>
+        <div>
+            <img src="./images/meds/img-5.png" alt="Лоратадин-Дарниця">
+            <span>Лоратадин-Дарниця</span>
+            <span>58 грн</span>
+        </div>
+        <div>
+            <img src="./images/meds/img-6.png" alt="Ерідез-Дарниця">
+            <span>Ерідез-Дарниця</span>
+            <span>51 грн</span>
+        </div>
+        <div>
+            <img src="./images/meds/img-7.png" alt="Кальцію глюконат-Дарниця (стабілізований)">
+            <span>Кальцію глюконат-Дарниця (стабілізований)</span>
+            <span>193 грн</span>
+        </div>
+    </div>
+</body>
+</html>
