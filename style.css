@@ -1,0 +1,250 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(214, 218, 107);
+    background: linear-gradient(90deg, rgba(214, 218, 107, 0.9557072829131653) 0%, rgba(114, 250, 205, 1) 28%, rgba(110, 222, 231, 0.6139705882352942) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    color: #0f9c85;
+}
+
+a:visited {
+    color: #ff5100;
+}
+
+a:active {
+    color: #faab00;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0f9c85;
+}
+
+h2 {
+    font-size: 32px;
+    font-style: normal !important;
+    color: #0f9c85;
+}
+
+p {
+    line-height: 23px;
+}
+
+.navigation {
+    padding: 10px 20px 10px 10px;
+    background-color: #ffffff7c;
+    width: fit-content;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: #ffffff7c;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px 10px 5px 10px;
+    border: #0f9c8596 2px solid;
+    text-align: center;
+}
+
+th {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: #0f9c85;
+    font-size: larger;
+}
+
+ul, ol, dl {
+    list-style-position: inside;
+}
+
+dt::after{
+    content: ' —';
+}
+
+.products-available {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.building-image {
+    width: 255.5px;
+    height: 256px;
+    overflow: hidden;
+}
+
+/*LAB 4 - СУСІДНІ СЕЛЕКТОРИ*/
+
+a+ul {
+    margin-left: -22px;
+}
+
+h2+h3, p+h3 {
+    color: #ff5100;
+}
+
+table+h3 {
+    margin-top: 50px;
+    color: #0f9c85;
+    font-size: larger;
+}
+
+/*КОНТЕКСТНІ СЕЛЕКТОРИ*/
+
+/*CSS з попередніх лабораторних*/
+
+#products-table .medication-type {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.about-us-contents li ul li {
+    list-style-type: circle;
+}
+
+.about-us-contents li {
+    list-style-type: upper-roman;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+/*доданий CSS*/
+
+.building-image img {
+    width: 255.5px;
+    transition: transform 0.5s;
+}
+
+.building-image:hover img {
+    transform: scale(1.1);
+}
+
+/*ДОЧІРНІ СЕЛЕКТОРИ*/
+
+.products-available > div {
+    width: min-content;
+    height: 300px;
+    padding: 20px 20px 10px 20px;
+    background-color: #ffffff7c;
+    margin: 5px 5px 10px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.products-available > div > img {
+    height: 220px;
+    display: block;
+}
+
+.products-available > div > span {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Lab 5*/
+
+.products-available div:first-child span:last-child{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.products-available div:first-child::after{
+    content: '83 грн';
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    font-weight: bold;
+}
+
+.products-available div:last-child span:last-child{
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.products-available div:last-child::after{
+    content: '60 грн';
+    font-family: "Montserrat", sans-serif;
+    color: red;
+    font-weight: bold;
+}
+
+.frame-container {
+    width: 350px;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle + label {
+    display: block;
+    cursor: pointer;
+    color: #095e50;
+    margin-bottom: 20px;
+}
+
+.toggle:checked + label + iframe, .toggle:checked + label + iframe + a  {
+    display: block;
+}
+
+.frame-container iframe {
+    display: none;
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.resource-link {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.resource-link::before {
+    content: "Джерело: ";
+    font-weight: bold;
+}
+
+.resource-link:link {
+    color: #faab00;
+}
+
+.resource-link:visited {
+    color: #ff5100;
+}
+
+.resource-link:active {
+    color: #faab00;
+    text-decoration: none;
+}
+
+.resource-link:hover {
+    text-decoration: none;
+}
+
+h3.main-news-header {
+    float: right;
+    position: relative;
+    right: 200px;
+    color: #ff5100;
+}
+
+.main-news {
+    width: 200px;
+    float: right;
+    position: relative;
+    top: 80px;
+}
